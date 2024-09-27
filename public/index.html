@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal NAS</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Estilos personalizados -->
+</head>
+<body>
+    <div class="container">
+        <h1 class="welcome">Bienvenido Luca</h1>
+        <h2 class="subheading">Sube los archivos que quieras</h2>
+        <div class="form-group">
+            <input type="file" id="fileInput" class="file-input" name="files" multiple>
+            <label for="fileInput" class="file-label">Seleccionar archivo</label>
+            <div id="fileName" class="file-name">Ningún archivo seleccionado</div>
+        </div>
+        <button id="uploadButton" class="btn">Subir Archivo</button>
+        <div id="previewContainer" class="preview-container"></div>
+        <div id="message" class="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
