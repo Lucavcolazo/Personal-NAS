@@ -1,0 +1,97 @@
+body {
+    background-color: #000000; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    font-family: 'Courier New', monospace; /* Fuente monoespaciada */
+    margin: 0;
+    padding: 0;
+    opacity: 0; /* Inicialmente ocultar todo el contenido */
+    animation: fadeIn 3.5s forwards; /* Aplicar animación de desvanecimiento */
+}
+
+.container {
+    max-width: 800px; /* Ancho máximo para escritorio */
+    margin: 0 auto; /* Centramos el contenedor */
+    padding: 20px;
+    text-align: center; /* Centrar texto */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2em; /* Tamaño del título */
+    margin-bottom: 10px; /* Separar un poco el título del subtítulo */
+}
+
+h2 {
+    font-size: 1.5em; /* Tamaño del subtítulo */
+    margin-bottom: 20px; /* Separar del resto */
+}
+
+.form-group {
+    margin-bottom: 30px; /* Separar el mensaje del botón de subir */
+}
+
+.file-input {
+    display: none; /* Ocultar el campo de archivo por defecto */
+}
+
+.file-label {
+    background-color: #1f1f1f; /* Fondo del botón */
+    color: #ffffff; /* Color del texto */
+    padding: 10px 20px;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    
+}
+
+.file-name {
+    margin-top: 30px;
+    font-size: 1em;
+}
+
+.btn {
+    background-color: #6200ea; /* Color del botón */
+    color: #ffffff; /* Color del texto */
+    padding: 10px 20px;
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+}
+
+.preview-container {
+    margin-top: 20px;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+/* Efecto de desvanecimiento */
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Hacer visible */
+    }
+}
+
+/* Diseño responsivo */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em; /* Tamaño del título en móvil */
+    }
+    
+    h2 {
+        font-size: 1.2em; /* Tamaño del subtítulo en móvil */
+    }
+    
+    .container {
+        padding: 10px; /* Menos padding en móvil */
+    }
+    
+    .btn, .file-label {
+        width: 100%; /* Botones ocupan el ancho completo */
+    }
+}
